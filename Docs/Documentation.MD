@@ -39,7 +39,7 @@ Créer un pipeline de données automatisé pour collecter, transformer et analys
 |--------|------|-------|--------|
 | **Chrstian** | Lead Architecte | lead@airquality.com | @lead-dev |
 | **Nomena** | Data Engineer - Extraction | nomena@airquality.com | @nomena-dev |
-| **Miharintsoa** | Data Engineer - Transformation | miharintsoa@airquality.com | @miharintsoa-dev |
+| **Miarintsoa** | Data Engineer - Transformation | miharintsoa@airquality.com | @miharintsoa-dev |
 | **Gael** | Data Analyst / BI | lucas@airquality.com | @lucas-dev |
 
 ### 1.4 Technologies Utilisées
