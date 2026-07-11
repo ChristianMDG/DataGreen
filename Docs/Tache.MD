@@ -9,7 +9,7 @@
 |--------|---------------|------------------|
 | **Christian** | Lead / Architecte Data | Architecture, Orchestration, Intégration |
 | **Nomena** | Data Engineer | Extraction, APIs, Stockage |
-| **Miharintsoa** | Data Engineer | Transformation, Data Quality |
+| **Miarintsoa** | Data Engineer | Transformation, Data Quality |
 | **Gael** | Data Analyst / BI | Data Warehouse, Visualisation, Dashboard |
 
 ---
