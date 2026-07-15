@@ -1,0 +1,38 @@
+FROM apache/airflow:2.7.0-python3.9
+
+# Installation des dépendances système
+USER root
+RUN apt-get update && apt-get install -y \
+    gcc \
+    g++ \
+    curl \
+    vim \
+    && rm -rf /var/lib/apt/lists/*
+
+# Retour à l'utilisateur airflow
+USER airflow
+
+# Installation des dépendances Python
+COPY requirements.txt /requirements.txt
+RUN pip install --no-cache-dir -r /requirements.txt
+
+# Installation des providers Airflow
+RUN pip install \
+    apache-airflow-providers-postgres \
+    apache-airflow-providers-http \
+    apache-airflow-providers-amazon
+
+# Variables d'environnement
+ENV AIRFLOW_HOME=/opt/airflow
+ENV PYTHONPATH=/opt/airflow
+
+# Dossiers
+RUN mkdir -p /opt/airflow/logs /opt/airflow/dags /opt/airflow/plugins /opt/airflow/config
+
+# Script d'entrée
+COPY docker/entrypoint.sh /entrypoint.sh
+USER root
+RUN chmod +x /entrypoint.sh
+USER airflow
+
+ENTRYPOINT ["/entrypoint.sh"]
