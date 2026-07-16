@@ -1,0 +1,883 @@
+[2026-07-16T20:18:17.665+0000] {manager.py:488} INFO - Processing files using up to 2 processes at a time 
+[2026-07-16T20:18:17.666+0000] {manager.py:489} INFO - Process each file at most once every 30 seconds
+[2026-07-16T20:18:17.666+0000] {manager.py:490} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-07-16T20:18:17.666+0000] {manager.py:760} INFO - Searching for files in /opt/airflow/dags
+[2026-07-16T20:18:17.667+0000] {manager.py:763} INFO - There are 0 files in /opt/airflow/dags
+[2026-07-16T20:21:13.120+0000] {manager.py:470} INFO - Exiting gracefully upon receiving signal 15
+[2026-07-16T20:21:30.697+0000] {manager.py:488} INFO - Processing files using up to 2 processes at a time 
+[2026-07-16T20:21:30.697+0000] {manager.py:489} INFO - Process each file at most once every 30 seconds
+[2026-07-16T20:21:30.697+0000] {manager.py:490} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-07-16T20:21:30.697+0000] {manager.py:760} INFO - Searching for files in /opt/airflow/dags
+[2026-07-16T20:21:30.698+0000] {manager.py:763} INFO - There are 0 files in /opt/airflow/dags
+[2026-07-16T20:21:32.211+0000] {manager.py:470} INFO - Exiting gracefully upon receiving signal 15
+[2026-07-16T20:21:42.087+0000] {manager.py:488} INFO - Processing files using up to 2 processes at a time 
+[2026-07-16T20:21:42.087+0000] {manager.py:489} INFO - Process each file at most once every 30 seconds
+[2026-07-16T20:21:42.087+0000] {manager.py:490} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-07-16T20:21:42.087+0000] {manager.py:760} INFO - Searching for files in /opt/airflow/dags
+[2026-07-16T20:21:42.088+0000] {manager.py:763} INFO - There are 0 files in /opt/airflow/dags
+[2026-07-16T20:24:51.629+0000] {manager.py:470} INFO - Exiting gracefully upon receiving signal 15
+[2026-07-16T20:25:03.876+0000] {manager.py:488} INFO - Processing files using up to 2 processes at a time 
+[2026-07-16T20:25:03.877+0000] {manager.py:489} INFO - Process each file at most once every 30 seconds
+[2026-07-16T20:25:03.877+0000] {manager.py:490} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-07-16T20:25:03.877+0000] {manager.py:760} INFO - Searching for files in /opt/airflow/dags
+[2026-07-16T20:25:03.878+0000] {manager.py:763} INFO - There are 0 files in /opt/airflow/dags
+[2026-07-16T20:28:45.732+0000] {manager.py:470} INFO - Exiting gracefully upon receiving signal 15
+[2026-07-16T20:28:59.173+0000] {manager.py:488} INFO - Processing files using up to 2 processes at a time 
+[2026-07-16T20:28:59.173+0000] {manager.py:489} INFO - Process each file at most once every 30 seconds
+[2026-07-16T20:28:59.174+0000] {manager.py:490} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-07-16T20:28:59.174+0000] {manager.py:760} INFO - Searching for files in /opt/airflow/dags
+[2026-07-16T20:28:59.175+0000] {manager.py:763} INFO - There are 0 files in /opt/airflow/dags
+[2026-07-16T20:32:59.690+0000] {manager.py:470} INFO - Exiting gracefully upon receiving signal 15
+[2026-07-16T20:33:12.199+0000] {manager.py:488} INFO - Processing files using up to 2 processes at a time 
+[2026-07-16T20:33:12.199+0000] {manager.py:489} INFO - Process each file at most once every 30 seconds
+[2026-07-16T20:33:12.199+0000] {manager.py:490} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-07-16T20:33:12.199+0000] {manager.py:760} INFO - Searching for files in /opt/airflow/dags
+[2026-07-16T20:33:12.200+0000] {manager.py:763} INFO - There are 0 files in /opt/airflow/dags
+[2026-07-16T20:38:12.745+0000] {manager.py:760} INFO - Searching for files in /opt/airflow/dags
+[2026-07-16T20:38:12.756+0000] {manager.py:763} INFO - There are 0 files in /opt/airflow/dags
+[2026-07-16T20:43:13.440+0000] {manager.py:760} INFO - Searching for files in /opt/airflow/dags
+[2026-07-16T20:43:13.442+0000] {manager.py:763} INFO - There are 0 files in /opt/airflow/dags
+[2026-07-16T20:48:14.135+0000] {manager.py:760} INFO - Searching for files in /opt/airflow/dags
+[2026-07-16T20:48:14.144+0000] {manager.py:763} INFO - There are 0 files in /opt/airflow/dags
+[2026-07-16T20:51:09.035+0000] {manager.py:470} INFO - Exiting gracefully upon receiving signal 15
+[2026-07-16T20:51:21.237+0000] {manager.py:488} INFO - Processing files using up to 2 processes at a time 
+[2026-07-16T20:51:21.238+0000] {manager.py:489} INFO - Process each file at most once every 30 seconds
+[2026-07-16T20:51:21.238+0000] {manager.py:490} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-07-16T20:51:21.238+0000] {manager.py:760} INFO - Searching for files in /opt/airflow/dags
+[2026-07-16T20:51:21.239+0000] {manager.py:763} INFO - There are 1 files in /opt/airflow/dags
+[2026-07-16T20:51:21.307+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/air_quality_pipeline.py    176  0.03s             0           0
+================================================================================
+[2026-07-16T20:51:51.454+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    182  0.00s             0           1  0.04s           2026-07-16T20:51:21
+================================================================================
+[2026-07-16T20:52:21.669+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    187  0.00s             0           1  0.05s           2026-07-16T20:51:51
+================================================================================
+[2026-07-16T20:52:51.839+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    192  0.01s             0           1  0.06s           2026-07-16T20:52:21
+================================================================================
+[2026-07-16T20:53:22.045+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    197  0.01s             0           1  0.05s           2026-07-16T20:52:51
+================================================================================
+[2026-07-16T20:53:52.282+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    202  0.01s             0           1  0.06s           2026-07-16T20:53:22
+================================================================================
+[2026-07-16T20:54:22.509+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    207  0.00s             0           1  0.07s           2026-07-16T20:53:52
+================================================================================
+[2026-07-16T20:54:52.692+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    212  0.01s             0           1  0.05s           2026-07-16T20:54:22
+================================================================================
+[2026-07-16T20:55:22.907+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    217  0.01s             0           1  0.07s           2026-07-16T20:54:52
+================================================================================
+[2026-07-16T20:55:53.101+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    222  0.01s             0           1  0.06s           2026-07-16T20:55:22
+================================================================================
+[2026-07-16T20:56:21.272+0000] {manager.py:760} INFO - Searching for files in /opt/airflow/dags
+[2026-07-16T20:56:21.274+0000] {manager.py:763} INFO - There are 1 files in /opt/airflow/dags
+[2026-07-16T20:56:23.312+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    227  0.00s             0           1  0.07s           2026-07-16T20:55:53
+================================================================================
+[2026-07-16T20:56:53.521+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    232  0.01s             0           1  0.09s           2026-07-16T20:56:23
+================================================================================
+[2026-07-16T20:57:23.784+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    237  0.00s             0           1  0.06s           2026-07-16T20:56:53
+================================================================================
+[2026-07-16T20:57:53.981+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py                           0           1  0.28s           2026-07-16T20:57:24
+================================================================================
+[2026-07-16T20:58:24.555+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    247  0.01s             0           1  0.07s           2026-07-16T20:57:54
+================================================================================
+[2026-07-16T20:58:54.811+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    252  0.00s             0           1  0.06s           2026-07-16T20:58:24
+================================================================================
+[2026-07-16T20:59:25.045+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    257  0.00s             0           1  0.06s           2026-07-16T20:58:54
+================================================================================
+[2026-07-16T20:59:55.273+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    262  0.01s             0           1  0.05s           2026-07-16T20:59:25
+================================================================================
+[2026-07-16T21:00:25.494+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    267  0.01s             0           1  0.06s           2026-07-16T20:59:55
+================================================================================
+[2026-07-16T21:00:55.721+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    272  0.00s             0           1  0.06s           2026-07-16T21:00:25
+================================================================================
+[2026-07-16T21:01:21.903+0000] {manager.py:760} INFO - Searching for files in /opt/airflow/dags
+[2026-07-16T21:01:21.905+0000] {manager.py:763} INFO - There are 1 files in /opt/airflow/dags
+[2026-07-16T21:01:25.960+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    277  0.01s             0           1  0.06s           2026-07-16T21:00:55
+================================================================================
+[2026-07-16T21:01:56.163+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    282  0.01s             0           1  0.07s           2026-07-16T21:01:26
+================================================================================
+[2026-07-16T21:02:26.381+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    287  0.01s             0           1  0.07s           2026-07-16T21:01:56
+================================================================================
+[2026-07-16T21:02:56.595+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    292  0.01s             0           1  0.07s           2026-07-16T21:02:26
+================================================================================
+[2026-07-16T21:03:26.811+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    297  0.00s             0           1  0.06s           2026-07-16T21:02:56
+================================================================================
+[2026-07-16T21:03:57.040+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    302  0.01s             0           1  0.04s           2026-07-16T21:03:26
+================================================================================
+[2026-07-16T21:04:27.284+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    307  0.00s             0           1  0.06s           2026-07-16T21:03:57
+================================================================================
+[2026-07-16T21:04:57.459+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    312  0.01s             0           1  0.06s           2026-07-16T21:04:27
+================================================================================
+[2026-07-16T21:05:27.652+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    317  0.01s             0           1  0.05s           2026-07-16T21:04:57
+================================================================================
+[2026-07-16T21:05:57.847+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    322  0.01s             0           1  0.06s           2026-07-16T21:05:27
+================================================================================
+[2026-07-16T21:06:21.980+0000] {manager.py:760} INFO - Searching for files in /opt/airflow/dags
+[2026-07-16T21:06:21.981+0000] {manager.py:763} INFO - There are 1 files in /opt/airflow/dags
+[2026-07-16T21:06:28.027+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    327  0.00s             0           1  0.06s           2026-07-16T21:05:57
+================================================================================
+[2026-07-16T21:06:58.261+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    332  0.01s             0           1  0.05s           2026-07-16T21:06:28
+================================================================================
+[2026-07-16T21:07:28.481+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    337  0.00s             0           1  0.07s           2026-07-16T21:06:58
+================================================================================
+[2026-07-16T21:07:58.719+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    342  0.01s             0           1  0.06s           2026-07-16T21:07:28
+================================================================================
+[2026-07-16T21:08:28.949+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    347  0.00s             0           1  0.07s           2026-07-16T21:07:58
+================================================================================
+[2026-07-16T21:08:59.166+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    352  0.01s             0           1  0.05s           2026-07-16T21:08:28
+================================================================================
+[2026-07-16T21:09:29.368+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    357  0.00s             0           1  0.07s           2026-07-16T21:08:59
+================================================================================
+[2026-07-16T21:09:59.598+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    362  0.01s             0           1  0.06s           2026-07-16T21:09:29
+================================================================================
+[2026-07-16T21:10:29.806+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    367  0.01s             0           1  0.07s           2026-07-16T21:09:59
+================================================================================
+[2026-07-16T21:11:00.040+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    372  0.01s             0           1  0.06s           2026-07-16T21:10:29
+================================================================================
+[2026-07-16T21:11:22.219+0000] {manager.py:760} INFO - Searching for files in /opt/airflow/dags
+[2026-07-16T21:11:22.220+0000] {manager.py:763} INFO - There are 1 files in /opt/airflow/dags
+[2026-07-16T21:11:30.279+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    377  0.00s             0           1  0.06s           2026-07-16T21:11:00
+================================================================================
+[2026-07-16T21:12:00.444+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    382  0.01s             0           1  0.05s           2026-07-16T21:11:30
+================================================================================
+[2026-07-16T21:12:30.675+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    387  0.01s             0           1  0.07s           2026-07-16T21:12:00
+================================================================================
+[2026-07-16T21:13:00.894+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    392  0.01s             0           1  0.05s           2026-07-16T21:12:30
+================================================================================
+[2026-07-16T21:13:31.103+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    397  0.01s             0           1  0.05s           2026-07-16T21:13:00
+================================================================================
+[2026-07-16T21:14:01.304+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    402  0.01s             0           1  0.06s           2026-07-16T21:13:31
+================================================================================
+[2026-07-16T21:14:31.514+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    407  0.01s             0           1  0.06s           2026-07-16T21:14:01
+================================================================================
+[2026-07-16T21:15:01.716+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    412  0.01s             0           1  0.06s           2026-07-16T21:14:31
+================================================================================
+[2026-07-16T21:15:31.888+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    417  0.00s             0           1  0.06s           2026-07-16T21:15:01
+================================================================================
+[2026-07-16T21:16:02.039+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    422  0.01s             0           1  0.04s           2026-07-16T21:15:31
+================================================================================
+[2026-07-16T21:16:23.160+0000] {manager.py:760} INFO - Searching for files in /opt/airflow/dags
+[2026-07-16T21:16:23.162+0000] {manager.py:763} INFO - There are 1 files in /opt/airflow/dags
+[2026-07-16T21:16:32.244+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    427  0.01s             0           1  0.06s           2026-07-16T21:16:02
+================================================================================
+[2026-07-16T21:17:02.412+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    432  0.00s             0           1  0.05s           2026-07-16T21:16:32
+================================================================================
+[2026-07-16T21:17:32.597+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    437  0.00s             0           1  0.04s           2026-07-16T21:17:02
+================================================================================
+[2026-07-16T21:18:02.793+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    442  0.00s             0           1  0.05s           2026-07-16T21:17:32
+================================================================================
+[2026-07-16T21:18:33.019+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    447  0.01s             0           1  0.05s           2026-07-16T21:18:02
+================================================================================
+[2026-07-16T21:19:03.226+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    452  0.00s             0           1  0.07s           2026-07-16T21:18:33
+================================================================================
+[2026-07-16T21:19:33.440+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    457  0.00s             0           1  0.05s           2026-07-16T21:19:03
+================================================================================
+[2026-07-16T21:20:03.642+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    462  0.00s             0           1  0.06s           2026-07-16T21:19:33
+================================================================================
+[2026-07-16T21:20:33.854+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    467  0.01s             0           1  0.05s           2026-07-16T21:20:03
+================================================================================
+[2026-07-16T21:21:04.015+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    472  0.00s             0           1  0.06s           2026-07-16T21:20:33
+================================================================================
+[2026-07-16T21:21:24.153+0000] {manager.py:760} INFO - Searching for files in /opt/airflow/dags
+[2026-07-16T21:21:24.154+0000] {manager.py:763} INFO - There are 1 files in /opt/airflow/dags
+[2026-07-16T21:21:34.230+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    477  0.00s             0           1  0.07s           2026-07-16T21:21:04
+================================================================================
+[2026-07-16T21:22:04.414+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    482  0.01s             0           1  0.05s           2026-07-16T21:21:34
+================================================================================
+[2026-07-16T21:22:34.607+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    487  0.00s             0           1  0.07s           2026-07-16T21:22:04
+================================================================================
+[2026-07-16T21:23:04.853+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    492  0.00s             0           1  0.06s           2026-07-16T21:22:34
+================================================================================
+[2026-07-16T21:23:35.081+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    497  0.01s             0           1  0.04s           2026-07-16T21:23:04
+================================================================================
+[2026-07-16T21:24:05.298+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    502  0.00s             0           1  0.07s           2026-07-16T21:23:35
+================================================================================
+[2026-07-16T21:24:35.468+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    507  0.00s             0           1  0.05s           2026-07-16T21:24:05
+================================================================================
+[2026-07-16T21:25:05.651+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    512  0.00s             0           1  0.05s           2026-07-16T21:24:35
+================================================================================
+[2026-07-16T21:25:35.866+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    517  0.01s             0           1  0.06s           2026-07-16T21:25:05
+================================================================================
+[2026-07-16T21:26:06.033+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    522  0.01s             0           1  0.07s           2026-07-16T21:25:35
+================================================================================
+[2026-07-16T21:26:24.153+0000] {manager.py:760} INFO - Searching for files in /opt/airflow/dags
+[2026-07-16T21:26:24.157+0000] {manager.py:763} INFO - There are 1 files in /opt/airflow/dags
+[2026-07-16T21:26:36.245+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    527  0.00s             0           1  0.05s           2026-07-16T21:26:06
+================================================================================
+[2026-07-16T21:27:06.459+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    532  0.00s             0           1  0.07s           2026-07-16T21:26:36
+================================================================================
+[2026-07-16T21:27:36.685+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    537  0.00s             0           1  0.06s           2026-07-16T21:27:06
+================================================================================
+[2026-07-16T21:28:06.888+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    542  0.01s             0           1  0.09s           2026-07-16T21:27:36
+================================================================================
+[2026-07-16T21:28:37.116+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    547  0.00s             0           1  0.06s           2026-07-16T21:28:06
+================================================================================
+[2026-07-16T21:29:07.315+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    552  0.00s             0           1  0.06s           2026-07-16T21:28:37
+================================================================================
+[2026-07-16T21:29:37.542+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    557  0.00s             0           1  0.05s           2026-07-16T21:29:07
+================================================================================
+[2026-07-16T21:30:07.731+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    562  0.00s             0           1  0.06s           2026-07-16T21:29:37
+================================================================================
+[2026-07-16T21:30:37.952+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    567  0.00s             0           1  0.06s           2026-07-16T21:30:07
+================================================================================
+[2026-07-16T21:31:08.156+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    572  0.01s             0           1  0.05s           2026-07-16T21:30:37
+================================================================================
+[2026-07-16T21:31:24.271+0000] {manager.py:760} INFO - Searching for files in /opt/airflow/dags
+[2026-07-16T21:31:24.273+0000] {manager.py:763} INFO - There are 1 files in /opt/airflow/dags
+[2026-07-16T21:31:38.383+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    577  0.00s             0           1  0.07s           2026-07-16T21:31:08
+================================================================================
+[2026-07-16T21:32:08.605+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    582  0.00s             0           1  0.06s           2026-07-16T21:31:38
+================================================================================
+[2026-07-16T21:32:38.833+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    587  0.00s             0           1  0.06s           2026-07-16T21:32:08
+================================================================================
+[2026-07-16T21:33:09.044+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    592  0.00s             0           1  0.06s           2026-07-16T21:32:38
+================================================================================
+[2026-07-16T21:33:39.276+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    597  0.00s             0           1  0.07s           2026-07-16T21:33:09
+================================================================================
+[2026-07-16T21:34:09.487+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    602  0.00s             0           1  0.05s           2026-07-16T21:33:39
+================================================================================
+[2026-07-16T21:34:39.679+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    607  0.00s             0           1  0.06s           2026-07-16T21:34:09
+================================================================================
+[2026-07-16T21:35:09.887+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    612  0.00s             0           1  0.06s           2026-07-16T21:34:39
+================================================================================
+[2026-07-16T21:35:40.081+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    617  0.00s             0           1  0.05s           2026-07-16T21:35:09
+================================================================================
+[2026-07-16T21:36:10.292+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    622  0.00s             0           1  0.04s           2026-07-16T21:35:40
+================================================================================
+[2026-07-16T21:36:24.397+0000] {manager.py:760} INFO - Searching for files in /opt/airflow/dags
+[2026-07-16T21:36:24.399+0000] {manager.py:763} INFO - There are 1 files in /opt/airflow/dags
+[2026-07-16T21:36:40.523+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    627  0.00s             0           1  0.07s           2026-07-16T21:36:10
+================================================================================
+[2026-07-16T21:37:10.728+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    632  0.00s             0           1  0.05s           2026-07-16T21:36:40
+================================================================================
+[2026-07-16T21:37:40.918+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    637  0.00s             0           1  0.11s           2026-07-16T21:37:10
+================================================================================
+[2026-07-16T21:38:11.129+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    642  0.00s             0           1  0.05s           2026-07-16T21:37:40
+================================================================================
+[2026-07-16T21:38:41.351+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    647  0.01s             0           1  0.05s           2026-07-16T21:38:11
+================================================================================
+[2026-07-16T21:39:11.587+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    652  0.00s             0           1  0.08s           2026-07-16T21:38:41
+================================================================================
+[2026-07-16T21:39:41.797+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    657  0.00s             0           1  0.04s           2026-07-16T21:39:11
+================================================================================
+[2026-07-16T21:40:12.008+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    662  0.01s             0           1  0.07s           2026-07-16T21:39:41
+================================================================================
+[2026-07-16T21:40:42.212+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    667  0.00s             0           1  0.06s           2026-07-16T21:40:12
+================================================================================
+[2026-07-16T21:41:12.405+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    672  0.00s             0           1  0.08s           2026-07-16T21:40:42
+================================================================================
+[2026-07-16T21:41:24.519+0000] {manager.py:760} INFO - Searching for files in /opt/airflow/dags
+[2026-07-16T21:41:24.521+0000] {manager.py:763} INFO - There are 1 files in /opt/airflow/dags
+[2026-07-16T21:41:42.660+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    677  0.00s             0           1  0.07s           2026-07-16T21:41:12
+================================================================================
+[2026-07-16T21:42:12.862+0000] {manager.py:888} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/air_quality_pipeline.py    682  0.00s             0           1  0.05s           2026-07-16T21:41:42
+================================================================================
