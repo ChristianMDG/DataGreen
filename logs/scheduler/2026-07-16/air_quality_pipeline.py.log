@@ -1426,3 +1426,943 @@ Traceback (most recent call last):
 ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
 [2026-07-16T21:42:12.884+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
 [2026-07-16T21:42:12.905+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.037 seconds
+[2026-07-16T21:42:43.080+0000] {processor.py:157} INFO - Started process (PID=687) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:42:43.082+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:42:43.082+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:42:43.082+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:42:43.088+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:42:43.087+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:42:43.089+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:42:43.115+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.039 seconds
+[2026-07-16T21:43:13.272+0000] {processor.py:157} INFO - Started process (PID=692) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:43:13.275+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:43:13.276+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:43:13.276+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:43:13.284+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:43:13.283+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:43:13.285+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:43:13.314+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.046 seconds
+[2026-07-16T21:43:43.460+0000] {processor.py:157} INFO - Started process (PID=697) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:43:43.463+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:43:43.464+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:43:43.464+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:43:43.471+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:43:43.470+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:43:43.471+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:43:43.498+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.043 seconds
+[2026-07-16T21:44:13.655+0000] {processor.py:157} INFO - Started process (PID=702) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:44:13.658+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:44:13.659+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:44:13.659+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:44:13.668+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:44:13.667+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:44:13.669+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:44:13.699+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.049 seconds
+[2026-07-16T21:44:43.874+0000] {processor.py:157} INFO - Started process (PID=707) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:44:43.875+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:44:43.877+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:44:43.876+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:44:43.883+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:44:43.882+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:44:43.883+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:44:43.910+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.041 seconds
+[2026-07-16T21:45:14.108+0000] {processor.py:157} INFO - Started process (PID=712) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:45:14.109+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:45:14.111+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:45:14.110+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:45:14.119+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:45:14.117+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:45:14.119+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:45:14.153+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.053 seconds
+[2026-07-16T21:45:44.341+0000] {processor.py:157} INFO - Started process (PID=717) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:45:44.342+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:45:44.346+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:45:44.343+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:45:44.367+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:45:44.365+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:45:44.368+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:45:44.404+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.078 seconds
+[2026-07-16T21:46:14.510+0000] {processor.py:157} INFO - Started process (PID=722) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:46:14.511+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:46:14.512+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:46:14.512+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:46:14.520+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:46:14.519+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:46:14.520+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:46:14.541+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.036 seconds
+[2026-07-16T21:46:44.711+0000] {processor.py:157} INFO - Started process (PID=727) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:46:44.712+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:46:44.714+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:46:44.713+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:46:44.720+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:46:44.719+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:46:44.720+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:46:44.747+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.040 seconds
+[2026-07-16T21:47:14.901+0000] {processor.py:157} INFO - Started process (PID=732) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:47:14.904+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:47:14.905+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:47:14.905+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:47:14.912+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:47:14.911+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:47:14.912+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:47:14.939+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.042 seconds
+[2026-07-16T21:47:45.092+0000] {processor.py:157} INFO - Started process (PID=737) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:47:45.093+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:47:45.094+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:47:45.093+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:47:45.098+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:47:45.097+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:47:45.098+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:47:45.118+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.032 seconds
+[2026-07-16T21:48:15.292+0000] {processor.py:157} INFO - Started process (PID=742) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:48:15.292+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:48:15.293+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:48:15.293+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:48:15.299+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:48:15.298+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:48:15.299+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:48:15.319+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.030 seconds
+[2026-07-16T21:48:45.499+0000] {processor.py:157} INFO - Started process (PID=747) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:48:45.500+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:48:45.501+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:48:45.501+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:48:45.510+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:48:45.509+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:48:45.511+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:48:45.537+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.043 seconds
+[2026-07-16T21:49:15.704+0000] {processor.py:157} INFO - Started process (PID=752) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:49:15.705+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:49:15.705+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:49:15.705+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:49:15.712+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:49:15.711+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:49:15.712+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:49:15.730+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.029 seconds
+[2026-07-16T21:49:45.907+0000] {processor.py:157} INFO - Started process (PID=757) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:49:45.910+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:49:45.912+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:49:45.911+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:49:45.922+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:49:45.921+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:49:45.923+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:49:45.939+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.037 seconds
+[2026-07-16T21:50:16.120+0000] {processor.py:157} INFO - Started process (PID=762) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:50:16.121+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:50:16.122+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:50:16.122+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:50:16.129+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:50:16.128+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:50:16.130+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:50:16.157+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.044 seconds
+[2026-07-16T21:50:46.343+0000] {processor.py:157} INFO - Started process (PID=767) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:50:46.347+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:50:46.348+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:50:46.348+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:50:46.355+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:50:46.354+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:50:46.356+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:50:46.381+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.042 seconds
+[2026-07-16T21:51:16.542+0000] {processor.py:157} INFO - Started process (PID=772) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:51:16.543+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:51:16.544+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:51:16.544+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:51:16.568+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:51:16.565+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:51:16.569+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:51:16.604+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.075 seconds
+[2026-07-16T21:51:43.403+0000] {processor.py:157} INFO - Started process (PID=180) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:51:43.404+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:51:43.405+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:51:43.405+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:51:43.409+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:51:43.408+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:51:43.409+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:51:43.428+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.028 seconds
+[2026-07-16T21:52:13.609+0000] {processor.py:157} INFO - Started process (PID=186) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:52:13.611+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:52:13.612+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:52:13.612+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:52:13.618+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:52:13.617+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:52:13.618+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:52:13.642+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.036 seconds
+[2026-07-16T21:52:43.805+0000] {processor.py:157} INFO - Started process (PID=191) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:52:43.807+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:52:43.807+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:52:43.807+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:52:43.812+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:52:43.811+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:52:43.812+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:52:43.834+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.032 seconds
+[2026-07-16T21:53:13.958+0000] {processor.py:157} INFO - Started process (PID=196) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:53:13.964+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:53:13.964+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:53:13.964+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:53:13.970+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:53:13.969+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:53:13.970+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:53:13.987+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.032 seconds
+[2026-07-16T21:53:44.162+0000] {processor.py:157} INFO - Started process (PID=201) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:53:44.162+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:53:44.164+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:53:44.163+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:53:44.176+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:53:44.175+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:53:44.177+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:53:44.191+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.040 seconds
+[2026-07-16T21:54:14.327+0000] {processor.py:157} INFO - Started process (PID=206) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:54:14.327+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:54:14.328+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:54:14.328+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:54:14.333+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:54:14.332+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:54:14.333+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:54:14.358+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.034 seconds
+[2026-07-16T21:54:44.529+0000] {processor.py:157} INFO - Started process (PID=211) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:54:44.530+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:54:44.531+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:54:44.531+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:54:44.540+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:54:44.539+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:54:44.541+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:54:44.579+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.056 seconds
+[2026-07-16T21:55:14.730+0000] {processor.py:157} INFO - Started process (PID=216) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:55:14.733+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:55:14.735+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:55:14.734+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:55:14.741+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:55:14.741+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:55:14.742+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:55:14.762+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.035 seconds
+[2026-07-16T21:55:44.983+0000] {processor.py:157} INFO - Started process (PID=221) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:55:44.984+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:55:44.988+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:55:44.985+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:55:45.005+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:55:45.004+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 21, in <module>
+    from extract import extract_air_quality_data
+ImportError: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:55:45.006+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:55:45.059+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.083 seconds
+[2026-07-16T21:56:14.112+0000] {processor.py:157} INFO - Started process (PID=226) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:56:14.113+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:56:14.114+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:56:14.114+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:56:14.119+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:56:14.119+0000] {air_quality_pipeline.py:66} WARNING - ⚠️ Scripts non trouvés, utilisation des fonctions factices: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T21:56:14.155+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:56:14.153+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 154, in <module>
+    PythonOperator(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 804, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'extract_[' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2026-07-16T21:56:14.156+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:56:14.163+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.054 seconds
+[2026-07-16T21:56:21.163+0000] {processor.py:157} INFO - Started process (PID=231) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:56:21.164+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T21:56:21.165+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:56:21.165+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:56:21.167+0000] {logging_mixin.py:151} INFO - [2026-07-16T21:56:21.167+0000] {dagbag.py:324} INFO - File /opt/airflow/dags/air_quality_pipeline.py assumed to contain no DAGs. Skipping.
+[2026-07-16T21:56:21.167+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T21:56:21.193+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.035 seconds
+[2026-07-16T22:01:03.214+0000] {processor.py:157} INFO - Started process (PID=177) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:01:03.215+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:01:03.216+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:01:03.216+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:01:03.220+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:01:03.220+0000] {air_quality_pipeline.py:66} WARNING - ⚠️ Scripts non trouvés, utilisation des fonctions factices: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T22:01:03.244+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:01:03.243+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 154, in <module>
+    PythonOperator(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 804, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'extract_[' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2026-07-16T22:01:03.244+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:01:03.254+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.042 seconds
+[2026-07-16T22:01:04.253+0000] {processor.py:157} INFO - Started process (PID=182) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:01:04.254+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:01:04.254+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:01:04.254+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:01:04.259+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:01:04.259+0000] {air_quality_pipeline.py:66} WARNING - ⚠️ Scripts non trouvés, utilisation des fonctions factices: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T22:01:04.286+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:01:04.285+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 154, in <module>
+    PythonOperator(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 804, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'extract_[' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2026-07-16T22:01:04.287+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:01:04.298+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.048 seconds
+[2026-07-16T22:01:34.459+0000] {processor.py:157} INFO - Started process (PID=187) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:01:34.462+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:01:34.463+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:01:34.463+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:01:34.471+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:01:34.471+0000] {air_quality_pipeline.py:66} WARNING - ⚠️ Scripts non trouvés, utilisation des fonctions factices: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T22:01:34.504+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:01:34.503+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 154, in <module>
+    PythonOperator(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 804, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'extract_[' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2026-07-16T22:01:34.504+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:01:34.511+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.057 seconds
+[2026-07-16T22:01:53.045+0000] {processor.py:157} INFO - Started process (PID=177) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:01:53.047+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:01:53.047+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:01:53.047+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:01:53.051+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:01:53.051+0000] {air_quality_pipeline.py:66} WARNING - ⚠️ Scripts non trouvés, utilisation des fonctions factices: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T22:01:53.076+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:01:53.074+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 154, in <module>
+    PythonOperator(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 804, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'extract_[' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2026-07-16T22:01:53.076+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:01:53.084+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.041 seconds
+[2026-07-16T22:02:23.229+0000] {processor.py:157} INFO - Started process (PID=182) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:02:23.231+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:02:23.231+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:02:23.231+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:02:23.235+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:02:23.235+0000] {air_quality_pipeline.py:66} WARNING - ⚠️ Scripts non trouvés, utilisation des fonctions factices: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T22:02:23.258+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:02:23.257+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 154, in <module>
+    PythonOperator(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 804, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'extract_[' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2026-07-16T22:02:23.258+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:02:23.265+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.039 seconds
+[2026-07-16T22:02:53.416+0000] {processor.py:157} INFO - Started process (PID=187) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:02:53.418+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:02:53.419+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:02:53.419+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:02:53.423+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:02:53.423+0000] {air_quality_pipeline.py:66} WARNING - ⚠️ Scripts non trouvés, utilisation des fonctions factices: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T22:02:53.455+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:02:53.453+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 154, in <module>
+    PythonOperator(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 804, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'extract_[' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2026-07-16T22:02:53.455+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:02:53.463+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.050 seconds
+[2026-07-16T22:03:23.588+0000] {processor.py:157} INFO - Started process (PID=192) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:03:23.589+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:03:23.590+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:03:23.589+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:03:23.595+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:03:23.595+0000] {air_quality_pipeline.py:66} WARNING - ⚠️ Scripts non trouvés, utilisation des fonctions factices: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T22:03:23.626+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:03:23.624+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 154, in <module>
+    PythonOperator(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 804, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'extract_[' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2026-07-16T22:03:23.626+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:03:23.633+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.048 seconds
+[2026-07-16T22:03:53.804+0000] {processor.py:157} INFO - Started process (PID=197) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:03:53.806+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:03:53.807+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:03:53.807+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:03:53.811+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:03:53.811+0000] {air_quality_pipeline.py:66} WARNING - ⚠️ Scripts non trouvés, utilisation des fonctions factices: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T22:03:53.845+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:03:53.844+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 154, in <module>
+    PythonOperator(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 804, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'extract_[' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2026-07-16T22:03:53.845+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:03:53.854+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.053 seconds
+[2026-07-16T22:04:24.003+0000] {processor.py:157} INFO - Started process (PID=202) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:04:24.005+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:04:24.006+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:04:24.006+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:04:24.010+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:04:24.010+0000] {air_quality_pipeline.py:66} WARNING - ⚠️ Scripts non trouvés, utilisation des fonctions factices: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T22:04:24.044+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:04:24.043+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 154, in <module>
+    PythonOperator(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 804, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'extract_[' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2026-07-16T22:04:24.044+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:04:24.053+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.054 seconds
+[2026-07-16T22:04:54.238+0000] {processor.py:157} INFO - Started process (PID=207) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:04:54.241+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:04:54.242+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:04:54.242+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:04:54.249+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:04:54.249+0000] {air_quality_pipeline.py:66} WARNING - ⚠️ Scripts non trouvés, utilisation des fonctions factices: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T22:04:54.294+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:04:54.289+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 154, in <module>
+    PythonOperator(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 804, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'extract_[' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2026-07-16T22:04:54.295+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:04:54.304+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.071 seconds
+[2026-07-16T22:05:23.405+0000] {processor.py:157} INFO - Started process (PID=212) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:05:23.406+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:05:23.407+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:05:23.406+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:05:23.411+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:05:23.411+0000] {air_quality_pipeline.py:26} WARNING - Scripts non trouves: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T22:05:23.437+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:05:23.436+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 79, in <module>
+    task = PythonOperator(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 804, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'extract_[' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2026-07-16T22:05:23.437+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:05:23.449+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.047 seconds
+[2026-07-16T22:05:45.600+0000] {processor.py:157} INFO - Started process (PID=176) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:05:45.602+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:05:45.603+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:05:45.602+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:05:45.606+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:05:45.606+0000] {air_quality_pipeline.py:26} WARNING - Scripts non trouves: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T22:05:45.626+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:05:45.624+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 79, in <module>
+    task = PythonOperator(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 804, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'extract_[' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2026-07-16T22:05:45.626+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:05:45.634+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.036 seconds
+[2026-07-16T22:06:07.094+0000] {processor.py:157} INFO - Started process (PID=176) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:06:07.095+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:06:07.096+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:06:07.095+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:06:07.099+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:06:07.099+0000] {air_quality_pipeline.py:26} WARNING - Scripts non trouves: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T22:06:07.120+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:06:07.119+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 79, in <module>
+    task = PythonOperator(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 804, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'extract_[' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2026-07-16T22:06:07.121+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:06:07.129+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.038 seconds
+[2026-07-16T22:06:37.284+0000] {processor.py:157} INFO - Started process (PID=182) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:06:37.286+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:06:37.287+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:06:37.286+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:06:37.289+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:06:37.289+0000] {air_quality_pipeline.py:26} WARNING - Scripts non trouves: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T22:06:37.321+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:06:37.319+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 79, in <module>
+    task = PythonOperator(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 804, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'extract_[' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2026-07-16T22:06:37.322+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:06:37.333+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.051 seconds
+[2026-07-16T22:07:07.442+0000] {processor.py:157} INFO - Started process (PID=187) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:07:07.442+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:07:07.443+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:07:07.443+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:07:07.447+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:07:07.447+0000] {air_quality_pipeline.py:26} WARNING - Scripts non trouves: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T22:07:07.473+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:07:07.472+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 79, in <module>
+    task = PythonOperator(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 804, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'extract_[' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2026-07-16T22:07:07.474+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:07:07.482+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.043 seconds
+[2026-07-16T22:07:37.691+0000] {processor.py:157} INFO - Started process (PID=192) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:07:37.692+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:07:37.695+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:07:37.693+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:07:37.706+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:07:37.705+0000] {air_quality_pipeline.py:26} WARNING - Scripts non trouves: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T22:07:37.786+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:07:37.782+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 79, in <module>
+    task = PythonOperator(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 804, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'extract_[' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2026-07-16T22:07:37.788+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:07:37.812+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.130 seconds
+[2026-07-16T22:07:49.057+0000] {processor.py:157} INFO - Started process (PID=176) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:07:49.058+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:07:49.059+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:07:49.059+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:07:49.063+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:07:49.063+0000] {air_quality_pipeline.py:26} WARNING - Scripts non trouves: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T22:07:49.085+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:07:49.083+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 79, in <module>
+    task = PythonOperator(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 804, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'extract_[' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2026-07-16T22:07:49.085+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:07:49.093+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.038 seconds
+[2026-07-16T22:08:19.228+0000] {processor.py:157} INFO - Started process (PID=182) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:08:19.230+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:08:19.230+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:08:19.230+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:08:19.233+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:08:19.233+0000] {air_quality_pipeline.py:26} WARNING - Scripts non trouves: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T22:08:19.254+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:08:19.253+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 79, in <module>
+    task = PythonOperator(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 804, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'extract_[' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2026-07-16T22:08:19.255+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:08:19.263+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.037 seconds
+[2026-07-16T22:08:49.409+0000] {processor.py:157} INFO - Started process (PID=187) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:08:49.412+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:08:49.413+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:08:49.412+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:08:49.417+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:08:49.417+0000] {air_quality_pipeline.py:26} WARNING - Scripts non trouves: cannot import name 'extract_air_quality_data' from 'extract' (/opt/airflow/scripts/extract.py)
+[2026-07-16T22:08:49.456+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:08:49.454+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/air_quality_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/air_quality_pipeline.py", line 79, in <module>
+    task = PythonOperator(
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/python.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 436, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 804, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'extract_[' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2026-07-16T22:08:49.456+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:08:49.468+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.064 seconds
+[2026-07-16T22:10:40.865+0000] {processor.py:157} INFO - Started process (PID=176) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:10:40.866+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:10:40.867+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:10:40.867+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:10:40.881+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality_pipeline']) retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:10:40.903+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:10:40.903+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2026-07-16T22:10:40.921+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:10:40.921+0000] {dag.py:3677} INFO - Setting next_dagrun for air_quality_pipeline to 2024-01-01T00:00:00+00:00, run_after=2024-01-01T01:00:00+00:00
+[2026-07-16T22:10:40.938+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.075 seconds
+[2026-07-16T22:11:11.050+0000] {processor.py:157} INFO - Started process (PID=194) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:11:11.050+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:11:11.051+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:11:11.051+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:11:11.064+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality_pipeline']) retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:11:11.105+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:11:11.104+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2026-07-16T22:11:11.138+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.092 seconds
+[2026-07-16T22:11:41.237+0000] {processor.py:157} INFO - Started process (PID=230) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:11:41.238+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:11:41.238+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:11:41.238+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:11:41.248+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality_pipeline']) retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:11:41.276+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:11:41.276+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2026-07-16T22:11:41.315+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.081 seconds
+[2026-07-16T22:12:11.459+0000] {processor.py:157} INFO - Started process (PID=269) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:12:11.460+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:12:11.461+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:12:11.461+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:12:11.470+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality_pipeline']) retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:12:11.493+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:12:11.493+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2026-07-16T22:12:11.527+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.070 seconds
+[2026-07-16T22:12:41.612+0000] {processor.py:157} INFO - Started process (PID=304) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:12:41.614+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:12:41.615+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:12:41.615+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:12:41.623+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality_pipeline']) retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:12:41.649+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:12:41.649+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2026-07-16T22:12:41.680+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.070 seconds
+[2026-07-16T22:13:11.832+0000] {processor.py:157} INFO - Started process (PID=339) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:13:11.833+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:13:11.833+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:13:11.833+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:13:11.846+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality_pipeline']) retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:13:11.873+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:13:11.872+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2026-07-16T22:13:11.909+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.079 seconds
+[2026-07-16T22:13:42.013+0000] {processor.py:157} INFO - Started process (PID=375) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:13:42.016+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:13:42.018+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:13:42.017+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:13:42.033+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality_pipeline']) retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:13:42.070+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:13:42.069+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2026-07-16T22:13:42.098+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.088 seconds
+[2026-07-16T22:14:12.212+0000] {processor.py:157} INFO - Started process (PID=410) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:14:12.214+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:14:12.215+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:14:12.215+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:14:12.228+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality_pipeline']) retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:14:12.256+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:14:12.256+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2026-07-16T22:14:12.289+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.081 seconds
+[2026-07-16T22:14:42.423+0000] {processor.py:157} INFO - Started process (PID=421) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:14:42.426+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:14:42.427+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:14:42.427+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:14:42.441+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality_pipeline']) retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:14:42.470+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:14:42.470+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2026-07-16T22:14:42.484+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:14:42.484+0000] {dag.py:3677} INFO - Setting next_dagrun for air_quality_pipeline to 2024-01-02T09:00:00+00:00, run_after=2024-01-02T10:00:00+00:00
+[2026-07-16T22:14:42.496+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.076 seconds

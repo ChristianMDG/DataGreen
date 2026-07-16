@@ -12,17 +12,18 @@ echo "✅ PostgreSQL prêt!"
 if [ ! -f /opt/airflow/airflow.db ]; then
     echo "📦 Initialisation d'Airflow..."
     airflow db init
-    airflow db upgrade
+    airflow db migrate
     
-    # Créer l'utilisateur admin
     echo "👤 Création de l'utilisateur admin..."
     airflow users create \
         --username admin \
         --firstname Admin \
         --lastname User \
         --role Admin \
-        --email admin@datagreen.com \
-        --password admin123
+        --email admin@airquality.com \
+        --password admin
+else
+    echo "✅ Airflow déjà initialisé"
 fi
 
 # Exécuter la commande
