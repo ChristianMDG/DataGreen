@@ -21,8 +21,8 @@ if [ ! -f /opt/airflow/airflow.db ]; then
         --firstname Admin \
         --lastname User \
         --role Admin \
-        --email admin@airquality.com \
-        --password admin
+        --email admin@datagreen.com \
+        --password admin123
 fi
 
 # Exécuter la commande
