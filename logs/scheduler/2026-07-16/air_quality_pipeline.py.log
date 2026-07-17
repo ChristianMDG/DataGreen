@@ -2366,3 +2366,10 @@ airflow.exceptions.AirflowException: The key 'extract_[' has to be made of alpha
 [2026-07-16T22:14:42.470+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:14:42.470+0000] {dag.py:2907} INFO - Sync 1 DAGs
 [2026-07-16T22:14:42.484+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:14:42.484+0000] {dag.py:3677} INFO - Setting next_dagrun for air_quality_pipeline to 2024-01-02T09:00:00+00:00, run_after=2024-01-02T10:00:00+00:00
 [2026-07-16T22:14:42.496+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.076 seconds
+[2026-07-16T22:15:12.651+0000] {processor.py:157} INFO - Started process (PID=456) to work on /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:15:12.654+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/air_quality_pipeline.py for tasks to queue
+[2026-07-16T22:15:12.655+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:15:12.654+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:15:12.671+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality_pipeline']) retrieved from /opt/airflow/dags/air_quality_pipeline.py
+[2026-07-16T22:15:12.699+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:15:12.699+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2026-07-16T22:15:12.718+0000] {logging_mixin.py:151} INFO - [2026-07-16T22:15:12.718+0000] {dag.py:3677} INFO - Setting next_dagrun for air_quality_pipeline to 2024-01-02T14:00:00+00:00, run_after=2024-01-02T15:00:00+00:00
+[2026-07-16T22:15:12.731+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/air_quality_pipeline.py took 0.087 seconds

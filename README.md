@@ -319,20 +319,20 @@ FERNET_KEY=46BKJoQYlPPOexq0OhDZnIlNepKFf87WFwLbfzqDDho=
 
 ```bash
 # Build des images Docker
-docker compose -f docker/docker-compose.yml build
+docker compose -f docker-compose.yml build
 
 # En cas de problème
-docker compose -f docker/docker-compose.yml build --no-cache
+docker compose -f docker-compose.yml build --no-cache
 ```
 
 ### Étape 2 : Démarrer les Services
 
 ```bash
 # Démarrer tous les services
-docker compose -f docker/docker-compose.yml up -d
+docker compose -f docker-compose.yml up -d
 
 # Voir les logs (optionnel)
-docker compose -f docker/docker-compose.yml logs -f
+docker compose -f docker-compose.yml logs -f
 ```
 
 ### Étape 3 : Vérifier l'État
