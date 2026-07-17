@@ -339,7 +339,7 @@ docker compose -f docker-compose.yml logs -f
 
 ```bash
 # Voir l'état des conteneurs
-docker compose -f docker/docker-compose.yml ps
+docker compose -f docker-compose.yml ps
 
 # Résultat attendu :
 # NAME                IMAGE                STATUS
@@ -357,7 +357,7 @@ docker compose -f docker/docker-compose.yml ps
 sleep 15
 
 # Initialiser la base de données
-docker compose -f docker/docker-compose.yml exec -T webserver bash << 'EOF'
+docker compose -f docker-compose.yml exec -T webserver bash << 'EOF'
 airflow db init
 airflow db migrate
 airflow users create \
@@ -370,7 +370,7 @@ airflow users create \
 EOF
 
 # Redémarrer les services
-docker compose -f docker/docker-compose.yml restart webserver scheduler
+docker compose -f docker-compose.yml restart webserver scheduler
 sleep 20
 ```
 
@@ -403,10 +403,10 @@ curl http://localhost:8080/health
 
 ```bash
 # Data Warehouse (PostgreSQL)
-docker compose -f docker/docker-compose.yml exec postgres_warehouse psql -U warehouse -d air_quality_db
+docker compose -f docker-compose.yml exec postgres_warehouse psql -U warehouse -d air_quality_db
 
 # Métadonnées Airflow
-docker compose -f docker/docker-compose.yml exec postgres_airflow psql -U airflow -d airflow
+docker compose -f docker-compose.yml exec postgres_airflow psql -U airflow -d airflow
 ```
 
 ---
@@ -472,21 +472,21 @@ DataGreen/
 
 ```bash
 # Tester l'extraction pour une ville
-docker compose -f docker/docker-compose.yml exec webserver python /opt/airflow/scripts/extract.py Paris
+docker compose -f docker-compose.yml exec webserver python /opt/airflow/scripts/extract.py Paris
 
 # Voir les fichiers créés
-docker compose -f docker/docker-compose.yml exec webserver ls -la /opt/airflow/data/raw/air_quality/paris/
+docker compose -f docker-compose.yml exec webserver ls -la /opt/airflow/data/raw/air_quality/paris/
 
 # Voir le contenu d'un fichier JSON
-docker compose -f docker/docker-compose.yml exec webserver cat /opt/airflow/data/raw/air_quality/paris/*.json | head -50
+docker compose -f docker-compose.yml exec webserver cat /opt/airflow/data/raw/air_quality/paris/*.json | head -50
 
 # Tester les 5 villes
 for city in Paris London Berlin Madrid Rome; do
-    docker compose -f docker/docker-compose.yml exec webserver python /opt/airflow/scripts/extract.py $city
+    docker compose -f docker-compose.yml exec webserver python /opt/airflow/scripts/extract.py $city
 done
 
 # Déclencher le backfill
-docker compose -f docker/docker-compose.yml exec webserver airflow dags trigger air_quality_backfill
+docker compose -f docker-compose.yml exec webserver airflow dags trigger air_quality_backfill
 ```
 
 **Fichiers à modifier :**
@@ -508,19 +508,19 @@ docker compose -f docker/docker-compose.yml exec webserver airflow dags trigger 
 
 ```bash
 # Lancer la transformation
-docker compose -f docker/docker-compose.yml exec webserver python /opt/airflow/scripts/transform.py
+docker compose -f docker-compose.yml exec webserver python /opt/airflow/scripts/transform.py
 
 # Voir le CSV généré
-docker compose -f docker/docker-compose.yml exec webserver ls -la /opt/airflow/data/clean/
+docker compose -f docker-compose.yml exec webserver ls -la /opt/airflow/data/clean/
 
 # Lire le contenu
-docker compose -f docker/docker-compose.yml exec webserver cat /opt/airflow/data/clean/air_quality_*.csv | head -20
+docker compose -f docker-compose.yml exec webserver cat /opt/airflow/data/clean/air_quality_*.csv | head -20
 
 # Valider le fichier
-docker compose -f docker/docker-compose.yml exec webserver python /opt/airflow/scripts/validate_clean.py
+docker compose -f docker-compose.yml exec webserver python /opt/airflow/scripts/validate_clean.py
 
 # Compter les lignes
-docker compose -f docker/docker-compose.yml exec webserver wc -l /opt/airflow/data/clean/air_quality_*.csv
+docker compose -f docker-compose.yml exec webserver wc -l /opt/airflow/data/clean/air_quality_*.csv
 ```
 
 **Fichiers à modifier :**
@@ -542,19 +542,19 @@ docker compose -f docker/docker-compose.yml exec webserver wc -l /opt/airflow/da
 
 ```bash
 # Créer les tables
-docker compose -f docker/docker-compose.yml exec postgres_warehouse psql -U warehouse -d air_quality_db -f /opt/airflow/sql/create_dw.sql
+docker compose -f docker-compose.yml exec postgres_warehouse psql -U warehouse -d air_quality_db -f /opt/airflow/sql/create_dw.sql
 
 # Voir les tables
-docker compose -f docker/docker-compose.yml exec postgres_warehouse psql -U warehouse -d air_quality_db -c "\dt"
+docker compose -f docker-compose.yml exec postgres_warehouse psql -U warehouse -d air_quality_db -c "\dt"
 
 # Charger les données
-docker compose -f docker/docker-compose.yml exec webserver python /opt/airflow/scripts/load_warehouse.py
+docker compose -f docker-compose.yml exec webserver python /opt/airflow/scripts/load_warehouse.py
 
 # Vérifier le nombre de lignes
-docker compose -f docker/docker-compose.yml exec postgres_warehouse psql -U warehouse -d air_quality_db -c "SELECT COUNT(*) FROM fact_air_quality;"
+docker compose -f docker-compose.yml exec postgres_warehouse psql -U warehouse -d air_quality_db -c "SELECT COUNT(*) FROM fact_air_quality;"
 
 # Voir les données
-docker compose -f docker/docker-compose.yml exec postgres_warehouse psql -U warehouse -d air_quality_db -c "SELECT * FROM fact_air_quality LIMIT 10;"
+docker compose -f docker-compose.yml exec postgres_warehouse psql -U warehouse -d air_quality_db -c "SELECT * FROM fact_air_quality LIMIT 10;"
 ```
 
 **Fichiers à modifier :**
@@ -570,57 +570,57 @@ docker compose -f docker/docker-compose.yml exec postgres_warehouse psql -U ware
 
 ```bash
 # Démarrer
-docker compose -f docker/docker-compose.yml up -d
+docker compose -f docker-compose.yml up -d
 
 # Arrêter
-docker compose -f docker/docker-compose.yml down
+docker compose -f docker-compose.yml down
 
 # Redémarrer un service
-docker compose -f docker/docker-compose.yml restart webserver
+docker compose -f docker-compose.yml restart webserver
 
 # Voir l'état
-docker compose -f docker/docker-compose.yml ps
+docker compose -f docker-compose.yml ps
 
 # Voir les logs
-docker compose -f docker/docker-compose.yml logs -f
+docker compose -f docker-compose.yml logs -f
 
 # Logs d'un service spécifique
-docker compose -f docker/docker-compose.yml logs webserver
+docker compose -f docker-compose.yml logs webserver
 ```
 
 ### Gestion d'Airflow
 
 ```bash
 # Voir tous les DAGs
-docker compose -f docker/docker-compose.yml exec webserver airflow dags list
+docker compose -f docker-compose.yml exec webserver airflow dags list
 
 # Voir les erreurs d'import
-docker compose -f docker/docker-compose.yml exec webserver airflow dags list-import-errors
+docker compose -f docker-compose.yml exec webserver airflow dags list-import-errors
 
 # Déclencher un DAG
-docker compose -f docker/docker-compose.yml exec webserver airflow dags trigger air_quality_pipeline
+docker compose -f docker-compose.yml exec webserver airflow dags trigger air_quality_pipeline
 
 # Voir les exécutions
-docker compose -f docker/docker-compose.yml exec webserver airflow dags list-runs --dag-id air_quality_pipeline
+docker compose -f docker-compose.yml exec webserver airflow dags list-runs --dag-id air_quality_pipeline
 
 # Voir les logs d'une tâche
-docker compose -f docker/docker-compose.yml exec webserver airflow tasks logs air_quality_pipeline extract_paris 2024-07-16
+docker compose -f docker-compose.yml exec webserver airflow tasks logs air_quality_pipeline extract_paris 2024-07-16
 ```
 
 ### Gestion des Données
 
 ```bash
 # Voir raw/
-docker compose -f docker/docker-compose.yml exec webserver ls -la /opt/airflow/data/raw/air_quality/
+docker compose -f docker-compose.yml exec webserver ls -la /opt/airflow/data/raw/air_quality/
 
 # Voir clean/
-docker compose -f docker/docker-compose.yml exec webserver ls -la /opt/airflow/data/clean/
+docker compose -f docker-compose.yml exec webserver ls -la /opt/airflow/data/clean/
 
 # Voir le Data Warehouse
-docker compose -f docker/docker-compose.yml exec postgres_warehouse psql -U warehouse -d air_quality_db -c "SELECT * FROM fact_air_quality LIMIT 10;"
+docker compose -f docker-compose.yml exec postgres_warehouse psql -U warehouse -d air_quality_db -c "SELECT * FROM fact_air_quality LIMIT 10;"
 
 # Exporter les données
-docker compose -f docker/docker-compose.yml exec postgres_warehouse psql -U warehouse -d air_quality_db -c "COPY fact_air_quality TO '/tmp/fact_air_quality.csv' CSV HEADER;"
+docker compose -f docker-compose.yml exec postgres_warehouse psql -U warehouse -d air_quality_db -c "COPY fact_air_quality TO '/tmp/fact_air_quality.csv' CSV HEADER;"
 ```
 
 ### Nettoyage
@@ -633,8 +633,8 @@ rm -rf data/raw/* data/clean/*
 docker system prune -f
 
 # Réinitialisation complète
-docker compose -f docker/docker-compose.yml down -v
-docker compose -f docker/docker-compose.yml up -d
+docker compose -f docker-compose.yml down -v
+docker compose -f docker-compose.yml up -d
 ```
 
 ---
@@ -645,11 +645,11 @@ docker compose -f docker/docker-compose.yml up -d
 
 ```bash
 # Voir les logs
-docker compose -f docker/docker-compose.yml logs webserver
+docker compose -f docker-compose.yml logs webserver
 
 # Réinitialiser la base
-docker compose -f docker/docker-compose.yml exec webserver airflow db reset
-docker compose -f docker/docker-compose.yml exec webserver airflow db upgrade
+docker compose -f docker-compose.yml exec webserver airflow db reset
+docker compose -f docker-compose.yml exec webserver airflow db upgrade
 ```
 
 ### Problème : Port déjà utilisé
@@ -670,15 +670,15 @@ sudo usermod -aG docker $USER
 newgrp docker
 
 # OU utiliser sudo
-sudo docker compose -f docker/docker-compose.yml up -d
+sudo docker compose -f docker-compose.yml up -d
 ```
 
 ### Problème : Invalid Login Airflow
 
 ```bash
 # Réinitialiser le mot de passe
-docker compose -f docker/docker-compose.yml exec -T webserver airflow users delete --username admin
-docker compose -f docker/docker-compose.yml exec -T webserver bash << 'EOF'
+docker compose -f docker-compose.yml exec -T webserver airflow users delete --username admin
+docker compose -f docker-compose.yml exec -T webserver bash << 'EOF'
 airflow users create --username admin --firstname Admin --lastname User --role Admin --email admin@airquality.com --password admin
 EOF
 ```
@@ -687,10 +687,10 @@ EOF
 
 ```bash
 # Voir les erreurs
-docker compose -f docker/docker-compose.yml exec webserver airflow dags list-import-errors
+docker compose -f docker-compose.yml exec webserver airflow dags list-import-errors
 
 # Redémarrer
-docker compose -f docker/docker-compose.yml restart webserver scheduler
+docker compose -f docker-compose.yml restart webserver scheduler
 ```
 
 ### Problème : API Key invalide
