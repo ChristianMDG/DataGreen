@@ -1,0 +1,221 @@
+# ============================================
+# PYTHON
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pythonenv*
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+htmlcov/
+.tox
+.mypy_cache/
+.dmypy.json
+dmypy.json
+*.pyproj
+*.sln
+*.suo
+*.pid
+*.seed
+*.pid.lock
+
+# ============================================
+# DATA AND LOGS
+# ============================================
+data/raw/
+data/clean/
+logs/
+*.log
+*.tmp
+*.temp
+*.backup
+*.bak
+
+# ============================================
+# ENVIRONMENT VARIABLES
+# ============================================
+.env
+.env.local
+.env.*.local
+*.env
+*.env.local
+secrets.yaml
+secrets.yml
+secrets.json
+
+# ============================================
+# IDE AND EDITORS
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+.spotlight/
+.trashes/
+*.sublime-*
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+
+# ============================================
+# DOCKER
+# ============================================
+docker-compose.override.yml
+*.pid
+docker-compose*.yml.bak
+.dockerignore
+Dockerfile.bak
+
+# ============================================
+# AIRFLOW
+# ============================================
+airflow.db
+airflow-webserver.pid
+webserver_config.py
+airflow.cfg
+logs/
+airflow.db.bak
+.airflow/
+unittests.cfg
+.airflowignore
+
+# ============================================
+# JUPYTER NOTEBOOKS
+# ============================================
+.ipynb_checkpoints/
+*.ipynb
+*.html
+*.pdf
+
+# ============================================
+# OS AND SYSTEM
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+desktop.ini
+$RECYCLE.BIN/
+
+# ============================================
+# TEMPORARY FILES
+# ============================================
+*.tmp
+*.temp
+*.bak
+*.backup
+*.cache
+*.stamp
+*.lock
+*.pid
+
+# ============================================
+# SECURITY
+# ============================================
+*.key
+*.pem
+*.crt
+*.csr
+*.p12
+secrets/
+credentials/
+*.pwd
+*.password
+
+# ============================================
+# DATABASES
+# ============================================
+*.db
+*.sqlite
+*.sqlite3
+*.dump
+*.sql.bak
+*.sql.gz
+
+# ============================================
+# TEST REPORTS
+# ============================================
+coverage.xml
+*.coverage
+htmlcov/
+junit.xml
+pytest.xml
+test-reports/
+test-results/
+
+# ============================================
+# MINIO / S3
+# ============================================
+minio_data/
+.minio/
+.s3cfg
+.aws/
+
+# ============================================
+# POSTGRESQL
+# ============================================
+*.pgpass
+.pgpass
+PGDATA/
+postgresql*.conf
+
+# ============================================
+# VS CODE
+# ============================================
+.vscode/
+*.code-workspace
+settings.json
+
+# ============================================
+# BACKUP FILES
+# ============================================
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.rar
+*.7z
+*.bz2
+*.xz
+
+# ============================================
+# MISC
+# ============================================
+*.orig
+*.rej
+*.patch
+*.diff
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# ============================================
+# PROJECT SPECIFIC
+# ============================================
+data/reports/
+*.parquet
+*.csv.bak
+*.json.bak
+*.pyc
