@@ -3,6 +3,7 @@ import json
 import requests
 from datetime import datetime
 from dotenv import load_dotenv
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
 load_dotenv()
@@ -60,9 +61,25 @@ def main():
     if not API_KEY:
         raise ValueError("OPENWEATHER_API_KEY manquante")
 
-    for city, (lat, lon) in CITIES.items():
-        data = fetch_air_quality(city, lat, lon)
-        save_raw_data(city, data)
+    with ThreadPoolExecutor(max_workers=5) as executor:
+
+        futures = [
+            executor.submit(
+                fetch_air_quality,
+                city,
+                lat,
+                lon
+            )
+            for city, (lat, lon) in CITIES.items()
+        ]
+
+        for future in as_completed(futures):
+            result = future.result()
+
+            save_raw_data(
+                result["city"],
+                result
+            )
 
 
 if __name__ == "__main__":
