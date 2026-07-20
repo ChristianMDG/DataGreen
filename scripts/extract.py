@@ -5,6 +5,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import logging
+import time
 
 logging.basicConfig(
     level=logging.INFO,
@@ -29,37 +30,49 @@ CITIES = {
 RAW_FOLDER = "data/raw"
 
 
-def fetch_air_quality(city, lat, lon):
+def fetch_air_quality(city, lat, lon, retries=3):
+    """
+    Appel API OpenWeather avec retry et exponential backoff
+    """
 
     url = (
         "http://api.openweathermap.org/data/2.5/air_pollution"
         f"?lat={lat}&lon={lon}&appid={API_KEY}"
     )
 
-    try:
-        response = requests.get(url, timeout=30)
-        response.raise_for_status()
+    for attempt in range(1, retries + 1):
 
-        logger.info(f"Extraction réussie : {city}")
+        try:
+            response = requests.get(url, timeout=30)
+            response.raise_for_status()
 
-        return {
-            "city": city,
-            "data": response.json(),
-            "timestamp": datetime.now().isoformat()
-        }
+            logger.info(f"Extraction réussie : {city}")
 
-    except requests.exceptions.Timeout:
-        logger.error(f"Timeout API pour {city}")
-        return None
+            return {
+                "city": city,
+                "data": response.json(),
+                "timestamp": datetime.now().isoformat()
+            }
 
-    except requests.exceptions.HTTPError as e:
-        logger.error(f"Erreur HTTP pour {city}: {e}")
-        return None
+        except requests.exceptions.RequestException as e:
 
-    except Exception as e:
-        logger.error(f"Erreur inconnue pour {city}: {e}")
-        return None
+            logger.warning(
+                f"Tentative {attempt}/{retries} échouée pour {city}: {e}"
+            )
 
+            if attempt < retries:
+                wait_time = 2 ** attempt
+                logger.info(
+                    f"Nouvelle tentative dans {wait_time} secondes..."
+                )
+                time.sleep(wait_time)
+
+            else:
+                logger.error(
+                    f"Échec définitif extraction {city}"
+                )
+                return None
+            
 
 def save_raw_data(city, data):
     """
