@@ -219,4 +219,4 @@ data/reports/
 *.csv.bak
 *.json.bak
 *.pyc
-logs
+logs*
