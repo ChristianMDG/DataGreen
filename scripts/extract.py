@@ -4,6 +4,14 @@ import requests
 from datetime import datetime
 from dotenv import load_dotenv
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
+logger = logging.getLogger(__name__)
 
 
 load_dotenv()
@@ -22,23 +30,35 @@ RAW_FOLDER = "data/raw"
 
 
 def fetch_air_quality(city, lat, lon):
-    """
-    Appel de l'API OpenWeather Air Pollution
-    """
 
     url = (
         "http://api.openweathermap.org/data/2.5/air_pollution"
         f"?lat={lat}&lon={lon}&appid={API_KEY}"
     )
 
-    response = requests.get(url, timeout=30)
-    response.raise_for_status()
+    try:
+        response = requests.get(url, timeout=30)
+        response.raise_for_status()
 
-    return {
-        "city": city,
-        "data": response.json(),
-        "timestamp": datetime.now().isoformat()
-    }
+        logger.info(f"Extraction réussie : {city}")
+
+        return {
+            "city": city,
+            "data": response.json(),
+            "timestamp": datetime.now().isoformat()
+        }
+
+    except requests.exceptions.Timeout:
+        logger.error(f"Timeout API pour {city}")
+        return None
+
+    except requests.exceptions.HTTPError as e:
+        logger.error(f"Erreur HTTP pour {city}: {e}")
+        return None
+
+    except Exception as e:
+        logger.error(f"Erreur inconnue pour {city}: {e}")
+        return None
 
 
 def save_raw_data(city, data):
