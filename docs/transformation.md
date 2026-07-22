@@ -22,13 +22,13 @@
 
 ## Structure des Donnees
 
-**Version Basique (11 colonnes)**
+**Version Basique 
 city, date, hour, aqi, pm2_5, pm10, co, no, no2, o3, so2
 
-**Version Complete (19 colonnes)**
+**Version Complete
 city, date, hour, day, month, year, season, weekend, aqi, pm2_5, pm10, co, no, no2, o3, so2, pm_ratio, aqi_cat, quality
 
-**Version Finale (19 colonnes + partitionnee)**
+**Version Finale
 city, date, hour, day, month, year, season, weekend, aqi, pm2_5, pm10, co, no, no2, o3, so2, pm_ratio, aqi_cat, quality
 (Partitionnee par date dans dossiers YYYY-MM-DD/)
 
