@@ -1,4 +1,4 @@
-.PHONY: help setup up down restart logs clean test
+.PHONY: help setup up down restart logs clean test deploy
 
 help:
 	@echo "📋 Commandes disponibles :"
@@ -9,6 +9,7 @@ help:
 	@echo "  make logs     - Afficher les logs"
 	@echo "  make clean    - Nettoyer les données"
 	@echo "  make test     - Exécuter les tests"
+	@echo "  make deploy   - Déployer en production"
 
 setup:
 	@echo "📦 Configuration de l'environnement..."
@@ -19,20 +20,24 @@ setup:
 
 up:
 	@echo "🚀 Démarrage des services..."
-	docker-compose -f docker/docker-compose.yml up -d
+	docker compose -f docker-compose.yml up -d
 	@echo "✅ Services démarrés"
 	@echo "🌐 Airflow UI: http://localhost:8080 (admin/admin)"
 
 down:
 	@echo "🛑 Arrêt des services..."
-	docker-compose -f docker/docker-compose.yml down
+	docker compose -f docker-compose.yml down
 	@echo "✅ Services arrêtés"
 
 restart:
-	make down && make up
+	@echo "🔄 Redémarrage des services..."
+	docker compose -f docker-compose.yml down
+	docker compose -f docker-compose.yml up -d
+	@echo "✅ Services redémarrés"
 
 logs:
-	docker-compose -f docker/docker-compose.yml logs -f
+	@echo "📋 Affichage des logs..."
+	docker compose -f docker-compose.yml logs -f
 
 clean:
 	@echo "🧹 Nettoyage..."
@@ -43,3 +48,21 @@ test:
 	@echo "🧪 Exécution des tests..."
 	python -m pytest tests/ -v
 	@echo "✅ Tests terminés"
+
+deploy:
+	@echo "🚀 Déploiement en production..."
+	chmod +x deploy_prod.sh
+	./deploy_prod.sh
+	@echo "✅ Déploiement terminé"
+
+status:
+	@echo "📊 État des services..."
+	docker compose -f docker-compose.yml ps
+
+shell:
+	@echo "🐚 Connexion au conteneur Airflow..."
+	docker compose -f docker-compose.yml exec webserver bash
+
+db:
+	@echo "🐘 Connexion à PostgreSQL Warehouse..."
+	docker compose -f docker-compose.yml exec postgres_warehouse psql -U warehouse -d air_quality_db
