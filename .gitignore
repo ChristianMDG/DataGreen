@@ -88,7 +88,6 @@ airflow.db
 airflow-webserver.pid
 webserver_config.py
 airflow.cfg
-logs/
 airflow.db.bak
 .airflow/
 unittests.cfg
@@ -219,4 +218,30 @@ data/reports/
 *.csv.bak
 *.json.bak
 *.pyc
-logs
+**/logs/
+
+# Logs
+logs/
+*.log
+
+# Données
+data/raw/
+data/clean/
+
+# Secrets
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
