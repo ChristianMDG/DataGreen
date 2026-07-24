@@ -219,3 +219,29 @@ data/reports/
 *.json.bak
 *.pyc
 **/logs/
+
+# Logs
+logs/
+*.log
+
+# Données
+data/raw/
+data/clean/
+
+# Secrets
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
