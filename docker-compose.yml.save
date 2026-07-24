@@ -33,6 +33,7 @@ services:
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U warehouse"]
       interval: 10s
+
       timeout: 5s
       retries: 5
     networks:
@@ -70,9 +71,6 @@ services:
       AIRFLOW__CORE__FERNET_KEY: 46BKJoQYlPPOexq0OhDZnIlNepKFf87WFwLbfzqDDho=
       PYTHONPATH: /opt/airflow
       AIRFLOW__LOGGING__LOGGING_LEVEL: INFO
-      OPENWEATHER_API_KEY: ${OPENWEATHER_API_KEY}   # ← AJOUTÉ
-    env_file:
-      - .env                                      # ← AJOUTÉ (optionnel)
     volumes:
       - ./dags:/opt/airflow/dags
       - ./scripts:/opt/airflow/scripts

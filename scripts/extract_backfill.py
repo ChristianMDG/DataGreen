@@ -1,7 +1,6 @@
 """
 Script d'extraction des données historiques (Backfill)
 Extraction des 12 derniers mois depuis OpenWeather API
-Utilise les variables Airflow pour la clé API
 """
 
 import os
@@ -11,7 +10,6 @@ import time
 import logging
 from datetime import datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from airflow.models import Variable
 
 logging.basicConfig(
     level=logging.INFO,
@@ -20,12 +18,10 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-# Configuration - Récupérer la clé API depuis Airflow
-API_KEY = Variable.get("openweather_api_key", default_var=None)
-
+# Configuration
+API_KEY = os.getenv("OPENWEATHER_API_KEY")
 if not API_KEY:
-    logger.warning("⚠️ OPENWEATHER_API_KEY non définie dans Airflow")
-    logger.info("👉 Définissez-la avec: airflow variables set openweather_api_key 'votre_cle'")
+    raise ValueError("OPENWEATHER_API_KEY manquante")
 
 # Villes
 CITIES = {
@@ -41,14 +37,6 @@ RAW_FOLDER = "data/raw"
 
 def fetch_historical_data(city, lat, lon, start_date, end_date, retries=3):
     """Extrait les données historiques pour une ville"""
-    if not API_KEY:
-        logger.warning(f"⚠️ Clé API manquante, backfill simulé pour {city}")
-        return {
-            "city": city,
-            "data": {"list": []},
-            "timestamp": datetime.now().isoformat()
-        }
-    
     url = "http://api.openweathermap.org/data/2.5/air_pollution/history"
     
     start_ts = int(start_date.timestamp())
@@ -88,9 +76,6 @@ def fetch_historical_data(city, lat, lon, start_date, end_date, retries=3):
 
 def save_backfill_data(city, data):
     """Sauvegarde les données historiques"""
-    if not data:
-        return
-    
     os.makedirs(RAW_FOLDER, exist_ok=True)
     
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -118,11 +103,6 @@ def split_date_range(start_date, end_date, days=30):
 
 def main():
     """Point d'entrée principal"""
-    if not API_KEY:
-        logger.error("❌ Backfill impossible: clé API manquante")
-        logger.info("👉 Définissez la variable: airflow variables set openweather_api_key 'votre_cle'")
-        return
-    
     end_date = datetime.now()
     start_date = end_date - timedelta(days=365)
     
