@@ -70,6 +70,9 @@ services:
       AIRFLOW__CORE__FERNET_KEY: 46BKJoQYlPPOexq0OhDZnIlNepKFf87WFwLbfzqDDho=
       PYTHONPATH: /opt/airflow
       AIRFLOW__LOGGING__LOGGING_LEVEL: INFO
+      OPENWEATHER_API_KEY: ${OPENWEATHER_API_KEY}   # ← AJOUTÉ
+    env_file:
+      - .env                                      # ← AJOUTÉ (optionnel)
     volumes:
       - ./dags:/opt/airflow/dags
       - ./scripts:/opt/airflow/scripts

@@ -20,7 +20,7 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-# Configuration - Récupérer la clé API depuis Airflow
+# Récupérer la clé API depuis Airflow
 API_KEY = Variable.get("openweather_api_key", default_var=None)
 
 if not API_KEY:
