@@ -208,8 +208,10 @@ class TestTransform(unittest.TestCase):
 
             self.assertIsNotNone(output_file)
             self.assertTrue(os.path.exists(output_file))
-            self.assertTrue(output_file.endswith(".csv"))
-            self.assertIn("air_quality_", output_file)
+            self.assertEqual(
+                os.path.basename(output_file),
+                "air_quality.csv"
+            )
 
             result = pd.read_csv(output_file)
 
@@ -294,6 +296,53 @@ class TestTransform(unittest.TestCase):
             self.assertEqual(result.iloc[0]["city"], "London")
             self.assertEqual(result.iloc[0]["country"], "UK")
             self.assertEqual(result.iloc[0]["aqi"], 3)
+
+    def test_transform_rebuilds_single_file_across_runs(self):
+        """
+        Checks that clean/ always contains exactly ONE CSV file, rebuilt
+        from raw/ on every run (no accumulation of timestamped files).
+        """
+
+        raw_data = {
+            "city": "Paris",
+            "data": {
+                "list": [
+                    {
+                        "dt": 1767225600,
+                        "main": {"aqi": 2},
+                        "components": {"pm2_5": 12.0, "pm10": 20.0}
+                    }
+                ]
+            }
+        }
+
+        with tempfile.TemporaryDirectory() as temporary_folder:
+            raw_folder = os.path.join(temporary_folder, "raw")
+            clean_folder = os.path.join(temporary_folder, "clean")
+
+            os.makedirs(raw_folder)
+
+            json_path = os.path.join(raw_folder, "paris_run1.json")
+            with open(json_path, "w", encoding="utf-8") as json_file:
+                json.dump(raw_data, json_file)
+
+            with patch.object(transform, "RAW_FOLDER", raw_folder):
+                with patch.object(transform, "CLEAN_FOLDER", clean_folder):
+                    first_run = transform.transform_air_quality_data()
+
+                    # Un deuxième fichier apparaît dans raw/ (nouvelle heure)
+                    json_path_2 = os.path.join(raw_folder, "paris_run2.json")
+                    with open(json_path_2, "w", encoding="utf-8") as json_file:
+                        json.dump(raw_data, json_file)
+
+                    second_run = transform.transform_air_quality_data()
+
+            self.assertEqual(first_run, second_run)
+
+            clean_files = [
+                f for f in os.listdir(clean_folder) if f.endswith(".csv")
+            ]
+            self.assertEqual(clean_files, ["air_quality.csv"])
 
     def test_transform_ignores_invalid_json_file(self):
         """Checks that an invalid JSON file is ignored."""

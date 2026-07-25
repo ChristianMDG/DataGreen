@@ -31,24 +31,36 @@ RAW_FOLDER = "data/raw"
 CLEAN_FOLDER = "data/clean"
 
 
-def transform_air_quality_data():
+CLEAN_FILENAME = "air_quality.csv"
+
+
+def transform_air_quality_data(raw_path=None, clean_path=None):
     """
-    Transforme les données brutes en fichier clean/ unique
+    Reconstruit ENTIÈREMENT clean/air_quality.csv à partir de tout ce qui
+    existe dans raw/ (jamais un ajout/append : on relit raw/ en entier et on
+    réécrit le même fichier). raw/ n'est jamais modifié.
+
+    Args:
+        raw_path: dossier raw/ à utiliser (sinon RAW_FOLDER, patché dans les tests)
+        clean_path: dossier clean/ à utiliser (sinon CLEAN_FOLDER, patché dans les tests)
     """
+    raw_folder = raw_path or RAW_FOLDER
+    clean_folder = clean_path or CLEAN_FOLDER
+
     try:
         logger.info("🔄 Début de la transformation...")
 
         # Récupérer TOUS les fichiers JSON (incluant backfill_ et sous-dossiers)
         json_files = []
-        
+
         # Fichiers à la racine de raw/
-        json_files.extend(glob.glob(f"{RAW_FOLDER}/*.json"))
-        
-        # Fichiers dans les sous-dossiers (backfill/ ou autres)
-        json_files.extend(glob.glob(f"{RAW_FOLDER}/**/*.json", recursive=True))
-        
-        # Alternative: chercher tous les fichiers JSON dans raw/ et sous-dossiers
-        # json_files = list(Path(RAW_FOLDER).rglob("*.json"))
+        json_files.extend(glob.glob(f"{raw_folder}/*.json"))
+
+        # Fichiers dans les sous-dossiers (par ville/date, backfill/, etc.)
+        json_files.extend(glob.glob(f"{raw_folder}/**/*.json", recursive=True))
+
+        # Dédoublonner la liste (un fichier peut matcher les deux patterns)
+        json_files = sorted(set(json_files))
 
         if not json_files:
             logger.warning("Aucun fichier JSON trouvé dans raw/")
@@ -122,13 +134,17 @@ def transform_air_quality_data():
         # Nettoyage des données
         df = clean_dataframe(df)
 
-        # Sauvegarde en CSV
-        os.makedirs(CLEAN_FOLDER, exist_ok=True)
+        # Sauvegarde en CSV : UN seul fichier, reconstruit à chaque run
+        os.makedirs(clean_folder, exist_ok=True)
 
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        output_file = os.path.join(CLEAN_FOLDER, f"air_quality_{timestamp}.csv")
+        output_file = os.path.join(clean_folder, CLEAN_FILENAME)
 
-        df.to_csv(output_file, index=False, encoding="utf-8")
+        # Écriture atomique : on écrit dans un fichier temporaire puis on
+        # remplace l'ancien clean/, pour ne jamais laisser un fichier
+        # partiellement écrit si le run est interrompu.
+        tmp_file = output_file + ".tmp"
+        df.to_csv(tmp_file, index=False, encoding="utf-8")
+        os.replace(tmp_file, output_file)
 
         logger.info(f"✅ clean/ généré: {len(df)} lignes dans {output_file}")
         logger.info(f"📊 Colonnes: {list(df.columns)}")

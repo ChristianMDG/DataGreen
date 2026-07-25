@@ -1,7 +1,11 @@
 """
-Script d'extraction des données historiques (Backfill)
-Extraction des 12 derniers mois depuis OpenWeather API
-Utilise les variables Airflow pour la clé API
+Script d'extraction des données de qualité de l'air (OpenWeather API)
+
+Contient deux familles de fonctions :
+- extract_air_quality_data() : extraction "temps réel" pour UNE ville,
+  utilisée par le DAG horaire air_quality_pipeline.
+- fetch_historical_data() / main() : extraction historique (backfill),
+  utilisées par air_quality_backfill.py / extract_backfill.py.
 """
 
 import os
@@ -37,6 +41,78 @@ CITIES = {
 }
 
 RAW_FOLDER = "data/raw"
+
+AIR_QUALITY_URL = "http://api.openweathermap.org/data/2.5/air_pollution"
+
+
+def extract_air_quality_data(city_name, api_key, output_path, retries=3):
+    """
+    Extraction "temps réel" de la qualité de l'air pour UNE ville.
+
+    Appelée toutes les heures par le DAG air_quality_pipeline (une tâche
+    par ville, en parallèle via un TaskGroup). Écrit un fichier JSON brut
+    et NE LE MODIFIE JAMAIS ENSUITE (zone raw/ intouchable) :
+    raw/{city}/{YYYY-MM-DD}/{city}_{YYYYMMDDTHHMMSS}.json
+
+    Args:
+        city_name: nom de la ville (doit être une clé de CITIES)
+        api_key: clé OpenWeather (ne jamais logger sa valeur)
+        output_path: dossier racine raw/ (ex: /opt/airflow/data/raw)
+
+    Returns:
+        dict avec au minimum {"city": ..., "status": "success"|"error"}
+    """
+    coords = CITIES.get(city_name)
+    if coords is None:
+        logger.error(f"❌ Ville inconnue: {city_name}")
+        return {"city": city_name, "status": "error", "reason": "unknown_city"}
+
+    if not api_key:
+        logger.error(f"❌ Clé API manquante, extraction impossible pour {city_name}")
+        return {"city": city_name, "status": "error", "reason": "missing_api_key"}
+
+    params = {"lat": coords["lat"], "lon": coords["lon"], "appid": api_key}
+
+    data = None
+    for attempt in range(1, retries + 1):
+        try:
+            response = requests.get(AIR_QUALITY_URL, params=params, timeout=30)
+            response.raise_for_status()
+            data = response.json()
+            break
+        except requests.exceptions.RequestException as e:
+            logger.warning(f"Tentative {attempt}/{retries} échouée pour {city_name}: {e}")
+            if attempt < retries:
+                time.sleep(2 ** attempt * 5)
+            else:
+                logger.error(f"❌ Échec définitif de l'extraction pour {city_name}: {e}")
+                return {"city": city_name, "status": "error", "reason": str(e)}
+
+    now = datetime.now()
+    city_folder = os.path.join(output_path, city_name.lower(), now.strftime("%Y-%m-%d"))
+    os.makedirs(city_folder, exist_ok=True)
+
+    filename = os.path.join(
+        city_folder,
+        f"{city_name.lower()}_{now.strftime('%Y%m%dT%H%M%S')}.json"
+    )
+
+    payload = {
+        "city": city_name,
+        "country": None,
+        "latitude": coords["lat"],
+        "longitude": coords["lon"],
+        "data": data,
+        "timestamp": now.isoformat(),
+    }
+
+    with open(filename, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2)
+
+    nb_mesures = len(data.get("list", [])) if data else 0
+    logger.info(f"✅ {city_name}: {nb_mesures} mesure(s) sauvegardée(s) -> {filename}")
+
+    return {"city": city_name, "status": "success", "file": filename}
 
 
 def fetch_historical_data(city, lat, lon, start_date, end_date, retries=3):
